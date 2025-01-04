@@ -12,6 +12,27 @@
 // document.write(arrUser);
 
 
-const name = 'Tania';
+// const name = 'Tania';
 
-alert(`Hello, ${name}`);
+// alert(`Hello, ${name}`);
+
+const numberOfFilms = +prompt("Скільки фільмів Ви подивились?");
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+
+const film = prompt("Який  останній фільм Ви дивились?");
+const bal = prompt("На скільки Ви його оцінюєте?");
+const film2 = prompt("Який  останній фільм Ви дивились?");
+const bal2 = prompt("На скільки Ви його оцінюєте?");
+
+personalMovieDB.movies[film] = bal;
+personalMovieDB.movies[film2] = bal;
+
+console.log(personalMovieDB);
